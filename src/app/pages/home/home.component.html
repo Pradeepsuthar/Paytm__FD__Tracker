@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<div class="jumbotron jumbotron-fluid bg-white mb-2">
+    <div class="container">
+        <div class="top">
+            <div class="d-flex">
+                <div>
+                    <img src="assets/images/Group23205.svg" width="15" alt="">
+                </div>
+                <div class="ml-2">
+                    <span>Total Fixed Deposit</span>
+                    <h4>₹24,000</h4>
+                    <div>
+                        <small class="text-success">₹0 (+0.00%)</small>
+                        <span class="text-muted"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-dot"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                            </svg></span>
+                        <small class="text-primary" routerLink="/interest-table">View Interest Table</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="d-flex justify-content-between container pt-4">
+            <div class="text-center" routerLink="/create-fd">
+                <img src="assets/images/addMoney.svg" width="30" alt="">
+                <p class="option__text">Create Fixed Deposit</p>
+            </div>
+            <div class="text-center mx-3" routerLink="/break-fd">
+                <img src="assets/images/benefits-of-sending-money-via-paytm-diagram.png" width="30" alt="">
+                <p class="option__text">Break Fixed Deposit</p>
+            </div>
+            <div class="text-center">
+                <img src="assets/images/Group22973.svg" width="30" alt="">
+                <p class="option__text">Certificates & Taxes</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Transactions -->
+<div class="jumbotron jumbotron-fluid bg-white my-0 transactions">
+    <div class="sticky-top bg-white px-3 py-2">
+        <div class="d-flex bd-highlight bg-gray">
+            <div class="flex-fill bd-highlight text-center" routerLink="/my-fd-desposit" routerLinkActive="active">
+                <p>My Fixed Deposits</p>
+            </div>
+            <div class="flex-fill bd-highlight text-center" routerLink="/transaction-history" routerLinkActive="active">    
+                <p>Transaction History</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
